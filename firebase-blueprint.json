@@ -1,0 +1,63 @@
+{
+  "entities": {
+    "UserProfile": {
+      "collectionName": "users",
+      "fields": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "gender": { "type": "string" },
+        "age": { "type": "number" },
+        "heightCm": { "type": "number" },
+        "currentWeightKg": { "type": "number" },
+        "targetWeightKg": { "type": "number" },
+        "activityLevel": { "type": "string" },
+        "weeklyGoalKg": { "type": "number" },
+        "dailyCalorieTarget": { "type": "number" },
+        "targetProteinG": { "type": "number" },
+        "targetCarbsG": { "type": "number" },
+        "targetFatG": { "type": "number" },
+        "onboardingCompleted": { "type": "boolean" },
+        "createdAt": { "type": "timestamp" },
+        "updatedAt": { "type": "timestamp" }
+      }
+    },
+    "MealEntry": {
+      "collectionName": "users/{userId}/mealEntries",
+      "fields": {
+        "userId": { "type": "string" },
+        "date": { "type": "string" },
+        "mealType": { "type": "string" },
+        "name": { "type": "string" },
+        "calories": { "type": "number" },
+        "proteinG": { "type": "number" },
+        "carbsG": { "type": "number" },
+        "fatG": { "type": "number" },
+        "fiberG": { "type": "number" },
+        "portionSize": { "type": "string" },
+        "imageUrl": { "type": "string" },
+        "isAiScanned": { "type": "boolean" },
+        "timestamp": { "type": "number" }
+      }
+    },
+    "WeightLog": {
+      "collectionName": "users/{userId}/weightLogs",
+      "fields": {
+        "userId": { "type": "string" },
+        "date": { "type": "string" },
+        "weightKg": { "type": "number" },
+        "notes": { "type": "string" },
+        "timestamp": { "type": "number" }
+      }
+    },
+    "WaterLog": {
+      "collectionName": "users/{userId}/waterLogs",
+      "fields": {
+        "userId": { "type": "string" },
+        "date": { "type": "string" },
+        "amountMl": { "type": "number" },
+        "timestamp": { "type": "number" }
+      }
+    }
+  }
+}
